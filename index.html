@@ -1,46 +1,93 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sangola eSports</title>
-  <style>
-    body {
-      background-color: #0a0a0a;
-      color: white;
-      font-family: 'Arial', sans-serif;
-      text-align: center;
-      padding: 40px;
-    }
-    h1 {
-      font-size: 40px;
-      color: #f44336;
-    }
-    p {
-      font-size: 18px;
-    }
-    .button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 15px 30px;
-      font-size: 18px;
-      background-color: #f44336;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-    .button:hover {
-      background-color: #d32f2f;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMEZONE</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Sangola eSports</h1>
-  <p>Welcome to Sangola's biggest eSports tournament hub!<br>
-     Register now to join Free Fire MAX And BGMI</p>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">⏣ GAMEZONE</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#esports">Esports</a></li>
+            <li><a href="#about">About</a></li> <!-- New About link -->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFpy4FqYzpxo4CCMp7r2HPLLKVsq00OEJ6EyNqAgvHR4ZB4A/viewform?usp=dialog" class="button">Register Now</a>
+    <!-- Game Sections -->
+    <main id="games">
+        <section class="game-card">
+            <img src="placeholder-csgo.jpg" alt="CS:GO">
+            <h2>CSGO</h2>
+            <p>A battle royale game where 50 players parachute onto an island, looking for weapons and equipment to kill the other players.</p>
+            <a href="#" class="play-button">Play Now</a>
+        </section>
 
-  <p style="margin-top: 50px;">Follow us on Instagram @esportsangola</p>
+        <section class="game-card">
+            <img src="placeholder-valorant.jpg" alt="Valorant">
+            <h2>Valorant</h2>
+            <p>A battle royale game where 50 players parachute onto an island, looking for weapons and equipment to kill the other players.</p>
+            <a href="#" class="play-button">Play Now</a>
+        </section>
+
+        <section class="game-card">
+            <img src="placeholder-bgmi.jpg" alt="BGMI">
+            <h2>BGMI</h2>
+            <p>A battle royale game where 50 players parachute onto an island, looking for weapons and equipment to kill the other players.</p>
+            <a href="#" class="play-button">Play Now</a>
+        </section>
+
+        <section class="game-card">
+            <img src="placeholder-freefire.jpg" alt="Free Fire">
+            <h2>Free Fire</h2>
+            <p>A battle royale game where 50 players parachute onto an island, looking for weapons and equipment to kill the other players.</p>
+            <a href="#" class="play-button">Play Now</a>
+        </section>
+    </main>
+
+    <!-- Upcoming Events -->
+    <section class="events" id="events">
+        <h2>Upcoming Events</h2>
+        <div class="event-card">
+            <h3>Free Fire Championship</h3>
+            <p><strong>Date:</strong> May 15, 2023</p>
+            <p><strong>Game:</strong> Free Fire</p>
+            <p><strong>Prize Pool:</strong> 10000</p>
+            <a href="#" class="register-button">Register Now</a>
+        </div>
+        <div class="event-card">
+            <h3>BGMI Tournament</h3>
+            <p><strong>Date:</strong> June 5, 2023</p>
+            <p><strong>Game:</strong> Battlegrounds Mobile India</p>
+            <p><strong>Prize Pool:</strong> 15000</p>
+            <a href="#" class="register-button">Register Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About GAMEZONE</h2>
+        <p>GAMEZONE is a leading platform for gamers, offering a wide range of popular games, exciting events, and competitive esports tournaments. Our mission is to create a thriving community where players can connect, compete, and enjoy the best gaming experiences.</p>
+        <p>Founded in 2020, GAMEZONE has quickly grown into a hub for gaming enthusiasts, providing top-tier customer support, regular updates, and a seamless user experience. Whether you're a casual player or a pro, GAMEZONE has something for everyone.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Email:</strong> support@gamezone.com</p>
+        <p><strong>Phone:</strong> +1-800-GAMEZONE</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="contact-button">Send Message</button>
+        </form>
+    </section>
 </body>
-</html>
+  </html>
