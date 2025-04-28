@@ -45,28 +45,6 @@ nav ul li a:hover {
   color: #ff2e63;
 }
 
-/* Hero Section */
-header {
-  background: url('banner-image.jpg') center/cover no-repeat;
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem;
-}
-
-.hero-content h1 {
-  font-size: 2.5rem;
-  color: #ff2e63;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  color: #ccc;
-  margin-top: 1rem;
-}
-
 /* Main Content */
 main {
   padding: 2rem;
@@ -90,7 +68,7 @@ main {
   border-bottom: 2px solid #ff2e63;
 }
 
-.game-card h3 {
+.game-card h2 {
   font-size: 1.5rem;
   color: #ff2e63;
   margin: 1rem 0 0.5rem;
@@ -169,15 +147,39 @@ main {
   background: #e6004c;
 }
 
+/* Esports Section */
+#esports {
+  padding: 3rem 2rem;
+  background: linear-gradient(rgba(26,26,46,0.8), rgba(26,26,46,0.9)), url('esports-background.jpg') center/cover no-repeat;
+  text-align: center;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 900px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#esports h2 {
+  font-size: 2.5rem;
+  color: #ff2e63;
+  margin-bottom: 1rem;
+}
+
+#esports p {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 1rem;
+}
+
 /* About Section */
 .about {
   padding: 2rem;
   text-align: center;
   background: #16213e;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
   max-width: 800px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
 }
 
 .about h2 {
@@ -197,10 +199,11 @@ main {
   padding: 2rem;
   text-align: center;
   background: #16213e;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
   max-width: 600px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
 }
 
 .contact h2 {
@@ -253,14 +256,15 @@ main {
 
 /* Footer */
 footer {
+  background: #0f0f1c;
+  color: #777;
   text-align: center;
   padding: 1rem;
-  background: #0f0f1c;
+  margin-top: 2rem;
   font-size: 0.9rem;
-  color: #666;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (min-width: 768px) {
   main {
     flex-direction: row;
@@ -277,14 +281,8 @@ footer {
     max-width: 600px;
   }
 
-  .about, .contact {
+  .about {
     max-width: 800px;
   }
-}
-
-@media (min-width: 1024px) {
-  .game-card {
-    width: 30%;
-  }
-    }
-    
+                             }
+  
